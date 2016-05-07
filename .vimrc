@@ -87,5 +87,3 @@ autocmd BufNewFile,BufRead * call Show_break()
 
 autocmd Filetype html,xhtml,xml,xsl let b:unaryTagsStack=""
 
-let g:colorscheme_switcher_exclude_builtins=1
-
