@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/sindex/Documents'
+let g:netrw_dirhist_2='/Users/sindex'
+let g:netrw_dirhist_3='/Users/sindex/Documents/projects/ex2'
+let g:netrw_dirhist_4='/Users/sindex'
+let g:netrw_dirhist_5='/Users/sindex/Documents'
+let g:netrw_dirhist_6='/Users/sindex'
+let g:netrw_dirhist_7='/Users/sindex/Documents/projects/eoss-website/eoss-website/wines'
+let g:netrw_dirhist_8='/Users/sindex/.vim'

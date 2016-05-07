@@ -1,0 +1,5 @@
+#! /bin/bash
+
+markdown "$1" | echo -e "<meta http-equiv='Content-Type' content='text/html; \
+charset=utf-8' />\n$(tee)" > "${1%.*}.html"
+

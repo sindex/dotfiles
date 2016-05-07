@@ -1,0 +1,59 @@
+{
+  /* Disable some default Ctrl shortcuts */
+    "^a"        = "";                               /* C-a */
+    "^b"        = "";                               /* C-b */
+    "^e"        = "";                               /* C-e */
+    "^f"        = "";                               /* C-f */
+    "^l"        = "";                               /* C-l */
+    "^n"        = "";                               /* C-n */
+    "^p"        = "";                               /* C-p */
+    "^v"        = "";                               /* C-v */
+
+  /* Ctrl shortcuts */
+    "^δ"        = "deleteForward:";                 /* C-δ         delete forward */
+    "^η"        = "deleteBackward:";                /* C-η         delete backward */
+    "^κ"        = "deleteToEndOfParagraph:";        /* C-κ         delete to the end of the paragraph */
+    "^ο"        = (insertNewlineIgnoringFieldEditor:,
+                   moveBackward:);                  /* C-ο         split the current line */
+    "^τ"        = "transpose:";                     /* C-τ         transpose letters */
+    "^υ"        = "yank:";                          /* C-υ         yank back 'killed' text */
+    "^w"        = "deleteWordBackward:";            /* C-w         delete backward one word */
+    "^ς"        = "deleteWordBackward:";            /* C-ς         delete backward one word */
+    "^u"        = "deleteToBeginningOfLine:";       /* C-u         delete to the beginning of the line */
+    "^θ"        = "deleteToBeginningOfLine:";       /* C-θ         delete to the beginning of the line */
+    "^n"        = "complete:";                      /* C-n         complete current word */
+    "^ν"        = "complete:";                      /* C-ν         complete current word */
+
+    "^x" = {
+        "^y"    = "scrollLineUp:";                  /* C-x C-y     scroll one line up */
+        "^e"    = "scrollLineDown:";                /* C-x C-e     scroll one line down */
+        "^b"    = "scrollPageUp:";                  /* C-x C-b     scroll one page up */
+        "^f"    = "scrollPageDown:";                /* C-x C-f     scroll one page down */
+        "^z"    = "centerSelectionInVisibleArea:";  /* C-x C-z     center the selection in the text area */
+        "^x"    = "swapWithMark:";                  /* C-x C-x     Swap with mark */
+        "^m"    = "selectToMark:";                  /* C-x C-m     Select to mark*/
+    };
+
+    "^χ" = {
+        "^υ"    = "scrollLineUp:";                  /* C-χ C-υ     scroll one line up */   
+        "^ε"    = "scrollLineDown:";                /* C-χ C-ε     scroll one line down */
+        "^β"    = "scrollPageUp:";                  /* C-χ C-β     scroll one page up */
+        "^φ"    = "scrollPageDown:";                /* C-χ C-φ     scroll one page down */
+        "^ζ"    = "centerSelectionInVisibleArea:";  /* C-x C-ζ     center the selection in the text area */
+        "^χ"    = "swapWithMark:";                  /* C-χ C-χ     Swap with mark */
+        "^μ"    = "selectToMark:";                  /* C-χ C-μ     Select to mark*/
+    };
+
+    "^\@"       = "setMark:";                       /* C-@         Set mark */
+    "^c"        = "deleteToMark:";                  /* C-c         Delete to mark */
+    "^ψ"        = "deleteToMark:";                  /* C-ψ         Delete to mark */
+
+    
+    "^\UF729"   = "moveToBeginningOfDocument:";     /* C-Home      move to beginning of document */
+    "^\UF72B"   = "moveToEndOfDocument:";           /* C-End       move to end of document */
+
+  /* Shift shortcuts */
+    "$\UF729"   = "moveToBeginningOfLine:";         /* S-Home      move to the beginning of the line */
+    "$\UF72B"   = "moveToEndOfLine:";               /* S-End       move to the end of the line */
+}
+
