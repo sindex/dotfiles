@@ -10,7 +10,7 @@ highlight! Conceal gui=NONE
 highlight! LineNr guifg=#505050 
 highlight! CursorLineNR guifg=#000000
 
-highlight! Statement gui=italic  
+highlight! Statement gui=none
 highlight! Identifier gui=none  
 highlight! Type gui=none  
 highlight! PreProc gui=none  

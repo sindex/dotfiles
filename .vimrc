@@ -17,12 +17,12 @@ set shortmess+=I
 
 nnoremap <leader>f :Sex<cr>
 
-if !has("gui_running")
-  set mouse=a
-  nnoremap <f9> :update<bar>make<cr>  
-else
+if has("gui_running")
   colorscheme acme
   nnoremap <Leader>c :colorscheme acme
+else
+  set mouse=a
+  nnoremap <f9> :update<bar>make<cr>
 endif
 
 set cursorline
@@ -50,24 +50,6 @@ autocmd FileType c setlocal makeprg=clang\ -o\ %:r\ %
 autocmd FileType cpp setlocal makeprg=clang++\ -o\ %:r\ %
 autocmd FileType markdown setlocal makeprg=markdownmk\ %\ &&\ open\ %:r.html
 autocmd FileType java setlocal makeprg=javac\ %
-
-" Append modeline after last line in buffer.
-" Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
-" files.
-function! AppendModeline()
-  let l:modeline = printf(" vim: set ts=%d sw=%d tw=%d %set :",
-        \ &tabstop, &shiftwidth, &textwidth, &expandtab ? '' : 'no')
-  let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
-  call append(line("$"), l:modeline)
-endfunction
-nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
-
-" func Eatchar(pat)
-"   let c = nr2char(getchar(0))
-"   return (c =~ a:pat) ? '' : c
-" endfunc
-"
-" inoreabbr <silent> ShortForm LongForm{<c-r>=Eatchar('\m\s\<bar>/')<cr>
 
 let &showbreak = '↪   '
 

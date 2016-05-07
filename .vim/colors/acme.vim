@@ -14,7 +14,7 @@ highlight! Visual guibg=fg guifg=bg
 highlight! CursorLine guibg=#ffffca guifg=fg 
 highlight! CursorLineNR guifg=#000000
 
-highlight! Statement gui=italic  
+highlight! Statement gui=none
 highlight! Identifier gui=none  
 highlight! Type gui=none  
 highlight! PreProc gui=none  
