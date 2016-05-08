@@ -26,13 +26,13 @@ hi Cursor	guibg=khaki guifg=slategrey
 "hi DiffText
 "hi ErrorMsg
 hi VertSplit	guibg=#c2bfa5 guifg=grey50 gui=none
-hi Folded	guibg=grey30 guifg=gold
+hi Folded	guibg=grey30 guifg=gold gui=italic
 hi FoldColumn	guibg=grey30 guifg=tan
 hi IncSearch	guifg=slategrey guibg=khaki
 "hi LineNr
 hi ModeMsg	guifg=goldenrod
 hi MoreMsg	guifg=SeaGreen
-hi NonText	guifg=SeaGreen
+hi NonText	guifg=palegreen
 hi Question	guifg=springgreen
 hi Search	guibg=peru guifg=wheat
 hi SpecialKey	guifg=yellowgreen
@@ -70,6 +70,7 @@ hi Search	cterm=NONE ctermfg=grey ctermbg=blue
 hi MoreMsg	ctermfg=darkgreen
 hi ModeMsg	cterm=NONE ctermfg=brown
 hi LineNr	guifg=LightBlue
+hi CursorLineNr	guifg=gold
 hi Question	ctermfg=green
 hi StatusLine	cterm=bold,reverse
 hi StatusLineNC cterm=reverse

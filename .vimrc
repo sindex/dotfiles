@@ -42,6 +42,8 @@ set statusline +=%5l%*
 set statusline +=/%L%*
 set statusline +=%4v\ %*
 
+let g:netrw_liststyle=3
+
 autocmd BufRead,BufNewFile *.txt,*.md,*.tex setlocal spell spelllang=en,el | 
       \ set textwidth=80
 
