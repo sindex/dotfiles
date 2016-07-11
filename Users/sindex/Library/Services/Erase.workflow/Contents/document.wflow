@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>417</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
 	<string>2.6</string>
 	<key>AMDocumentVersion</key>
@@ -47,14 +47,11 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Run AppleScript.action</string>
 				<key>ActionName</key>
-				<string>Εκτέλεση AppleScript</string>
+				<string>Run AppleScript</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}
-  tell application "System Events" to set frontmost of process "Automator Runner" to true
-  return input
-end run</string>
+					<string>on run {input, parameters}  tell application "System Events" to set frontmost of process "Automator Runner" to true  return inputend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -74,7 +71,7 @@ end run</string>
 				<string>49EA415F-F848-4CE9-941B-9A786448550A</string>
 				<key>Keywords</key>
 				<array>
-					<string>Εκτέλεση</string>
+					<string>Run</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>D17F7FA9-B750-4AC8-9558-6A2B9AB88E6E</string>
@@ -105,12 +102,10 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>301.500000:316.000000</string>
+				<string>309.000000:316.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -149,7 +144,7 @@ end run</string>
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>Είστε βέβαιοι ότι θέλετε να σβήσετε μόνιμα το/α στοιχείο/α;</string>
+							<string>Are you sure you want to permanently erase the selected item(s)?</string>
 						</array>
 					</dict>
 				</dict>
@@ -163,7 +158,7 @@ end run</string>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Ask for Confirmation.action</string>
 				<key>ActionName</key>
-				<string>Να ζητείται επιβεβαίωση</string>
+				<string>Ask for Confirmation</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>affirmativeTitle</key>
@@ -171,11 +166,11 @@ end run</string>
 					<key>displayWarning</key>
 					<true/>
 					<key>explanationText</key>
-					<string>Δεν είναι δυνατή η αναίρεση αυτής της ενέργειας.</string>
+					<string>You can’t undo this action.</string>
 					<key>negativeTitle</key>
 					<string>Ακύρωση</string>
 					<key>questionText</key>
-					<string>Είστε βέβαιοι ότι θέλετε να σβήσετε μόνιμα το/α στοιχείο/α;</string>
+					<string>Are you sure you want to permanently erase the selected item(s)?</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Ask for Confirmation</string>
@@ -195,11 +190,11 @@ end run</string>
 				<string>58A26DFB-347F-46AE-B1B9-ECFF786CD512</string>
 				<key>Keywords</key>
 				<array>
-					<string>Μήνυμα</string>
-					<string>Να γίνεται ερώτηση</string>
-					<string>Οθόνη</string>
-					<string>Προτροπή</string>
-					<string>Εμφάνιση</string>
+					<string>Message</string>
+					<string>Ask</string>
+					<string>Display</string>
+					<string>Prompt</string>
+					<string>Show</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>EAE8B2FC-236A-47E2-A44B-6BDC77A80351</string>
@@ -253,7 +248,7 @@ end run</string>
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<string>ΟΚ</string>
+						<string>OK</string>
 						<key>name</key>
 						<string>affirmativeTitle</string>
 						<key>required</key>
@@ -266,7 +261,7 @@ end run</string>
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<string>Ακύρωση</string>
+						<string>Cancel</string>
 						<key>name</key>
 						<string>negativeTitle</string>
 						<key>required</key>
@@ -277,14 +272,12 @@ end run</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>301.500000:513.000000</string>
+				<string>309.000000:513.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/el.lproj/main.nib</string>
+				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -334,7 +327,7 @@ end run</string>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionName</key>
-				<string>Εκτέλεση σκριπτ κελύφους</string>
+				<string>Run Shell Script</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
@@ -369,10 +362,10 @@ done</string>
 				<string>39C6112D-3B5A-47BA-ACF3-F5E4C8F5F1F8</string>
 				<key>Keywords</key>
 				<array>
-					<string>Κέλυφος</string>
-					<string>Σκριπτ</string>
+					<string>Shell</string>
+					<string>Script</string>
 					<string>Command</string>
-					<string>Εκτέλεση</string>
+					<string>Run</string>
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
@@ -451,14 +444,12 @@ done</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>301.500000:696.000000</string>
+				<string>309.000000:696.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/el.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -466,19 +457,19 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>366182B9-D502-474D-BCDD-DFDC3615AF51</key>
-		<dict>
-			<key>from</key>
-			<string>CEDE03A7-E808-44DE-A097-843CF5FB59D4 - CEDE03A7-E808-44DE-A097-843CF5FB59D4</string>
-			<key>to</key>
-			<string>93FC3E22-391C-4695-ADCE-BCE5B1199612 - 93FC3E22-391C-4695-ADCE-BCE5B1199612</string>
-		</dict>
-		<key>82E746D4-0C3E-4392-8C75-2BE82798EA57</key>
+		<key>837BDB3C-B7E1-46C0-BFDA-8E8771689E32</key>
 		<dict>
 			<key>from</key>
 			<string>1D3C969D-58D4-4B3B-85EF-FAE1C1665787 - 1D3C969D-58D4-4B3B-85EF-FAE1C1665787</string>
 			<key>to</key>
 			<string>CEDE03A7-E808-44DE-A097-843CF5FB59D4 - CEDE03A7-E808-44DE-A097-843CF5FB59D4</string>
+		</dict>
+		<key>D0F2006D-5751-4D11-AAA4-462F07D771D9</key>
+		<dict>
+			<key>from</key>
+			<string>CEDE03A7-E808-44DE-A097-843CF5FB59D4 - CEDE03A7-E808-44DE-A097-843CF5FB59D4</string>
+			<key>to</key>
+			<string>93FC3E22-391C-4695-ADCE-BCE5B1199612 - 93FC3E22-391C-4695-ADCE-BCE5B1199612</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

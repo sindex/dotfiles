@@ -12,3 +12,9 @@ if has("gui_macvim")
   nnoremap <silent> <d-[> :bp!<CR>
 endif
 
+set guioptions-=r
+set guioptions-=L
+
+set lines=65 columns=105
+winpos 591 105
+

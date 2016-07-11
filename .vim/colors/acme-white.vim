@@ -3,7 +3,7 @@ highlight clear
 
 highlight! StatusLine guibg=#aeeeee guifg=#000000 gui=NONE 
 highlight! StatusLineNC guibg=#eaffff guifg=#000000 gui=NONE 
-highlight! WildMenu guibg=#000000 guifg=#eaffff gui=NONE 
+highlight! WildMenu gui=NONE 
 highlight! VertSplit gui=NONE 
 highlight! Folded gui=italic 
 highlight! Conceal gui=NONE 

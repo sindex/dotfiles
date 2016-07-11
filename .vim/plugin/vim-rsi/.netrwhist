@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/sindex/Documents/projects/icsd-website'
+let g:netrw_dirhist_2='/Users/sindex/Documents/projects/icsd-website/icsd-website'
+let g:netrw_dirhist_3='/Users/sindex/.vim'
+let g:netrw_dirhist_4='/Users/sindex/.vim/after'
+let g:netrw_dirhist_5='/Users/sindex/.vim/after/ftplugin'

@@ -1,59 +1,106 @@
 {
-  /* Disable some default Ctrl shortcuts */
-    "^a"        = "";                               /* C-a */
-    "^b"        = "";                               /* C-b */
-    "^e"        = "";                               /* C-e */
-    "^f"        = "";                               /* C-f */
-    "^l"        = "";                               /* C-l */
-    "^n"        = "";                               /* C-n */
-    "^p"        = "";                               /* C-p */
-    "^v"        = "";                               /* C-v */
+/* Keybindings for emacs emulation.  Compiled by Jacob Rus.
+ *
+ * This is a pretty good set, especially considering that many emacs bindings
+ * such as C-o, C-a, C-e, C-k, C-y, C-v, C-f, C-b, C-p, C-n, C-t, and
+ * perhaps a few more, are already built into the system.
+ *
+ * BEWARE:
+ * This file uses the Option key as a meta key.  This has the side-effect
+ * of overriding Mac OS keybindings for the option key, which generally
+ * make common symbols and non-english letters.
+ */
+        
+    /* Ctrl shortcuts */
+    "^α"        = "moveToBeginningOfParagraph:";    /* C-α          move to the beginning of the paragraph */
+    "^β"        = "moveBackward:";                  /* C-β          move backward */
+    "^δ"        = "deleteForward:";                 /* C-δ          delete forward */
+    "^ε"        = "moveToEndOfParagraph:";          /* C-ε          move to the end of the paragraph */
+    "^φ"        = "moveForward:";                   /* C-φ          move forward */
+    "^η"        = "deleteBackward:";                /* C-η          delete backward */
+    "^κ"        = "deleteToEndOfParagraph:";        /* C-κ          delete to the end of the paragraph */
+    "^λ"        = "centerSelectionInVisibleArea:";  /* C-λ          center the selection in the text area */
+    "^ν"        = "moveDown:";                      /* C-ν          move down */
+    "^ο"        = ( "insertNewlineIgnoringFieldEditor:", /* C-ο     split the current line */
+                    "moveBackward:");
+    "^π"        = "moveUp:";                        /* C-π          move up */
+    "^τ"        = "transpose:";                     /* C-τ          transpose letters */
+    "^ω"        = "pageDown:";                      /* C-ω          move one page down */
+    "^υ"        = "yank:";                          /* C-υ          yank back ‘killed’ text */
+    "^l"        = "centerSelectionInVisibleArea:";  /* C-l          Recenter */
+    "^λ"        = "centerSelectionInVisibleArea:";  /* C-λ          Recenter */
+    "^/"        = "undo:";                          /* C-/          Undo */
+    "^_"        = "undo:";                          /* C-_          Undo */
+    "^ "        = "setMark:";                       /* C-Spc        Set mark */
+    "^\@"       = "setMark:";                       /* C-@          Set mark */
+    "^w"        = "deleteToMark:";                  /* C-w          Delete to mark */
+    "^ς"        = "deleteToMark:";                  /* C-ς          Delete to mark */
 
-  /* Ctrl shortcuts */
-    "^δ"        = "deleteForward:";                 /* C-δ         delete forward */
-    "^η"        = "deleteBackward:";                /* C-η         delete backward */
-    "^κ"        = "deleteToEndOfParagraph:";        /* C-κ         delete to the end of the paragraph */
-    "^ο"        = (insertNewlineIgnoringFieldEditor:,
-                   moveBackward:);                  /* C-ο         split the current line */
-    "^τ"        = "transpose:";                     /* C-τ         transpose letters */
-    "^υ"        = "yank:";                          /* C-υ         yank back 'killed' text */
-    "^w"        = "deleteWordBackward:";            /* C-w         delete backward one word */
-    "^ς"        = "deleteWordBackward:";            /* C-ς         delete backward one word */
-    "^u"        = "deleteToBeginningOfLine:";       /* C-u         delete to the beginning of the line */
-    "^θ"        = "deleteToBeginningOfLine:";       /* C-θ         delete to the beginning of the line */
-    "^n"        = "complete:";                      /* C-n         complete current word */
-    "^ν"        = "complete:";                      /* C-ν         complete current word */
 
+    /* Meta shortcuts */
+    "~f"        = "moveWordForward:";               /* M-f          Move forward word */
+    "~φ"        = "moveWordForward:";               /* M-φ          Move forward word */
+    "~b"        = "moveWordBackward:";              /* M-b          Move backward word */
+    "~β"        = "moveWordBackward:";              /* M-β          Move backward word */
+    "~<"        = "moveToBeginningOfDocument:";     /* M-<          Move to beginning of document */
+    "~>"        = "moveToEndOfDocument:";           /* M->          Move to end of document */
+    "~v"        = "pageUp:";                        /* M-v          Page Up */
+    "~ν"        = "pageUp:";                        /* M-ν          Page Up */
+    "~/"        = "complete:";                      /* M-/          Complete */
+    "~c"        = ( "capitalizeWord:",              /* M-c          Capitalize */
+                    "moveForward:",
+                    "moveForward:");
+    "~ψ"        = ( "capitalizeWord:",              /* M-ψ          Capitalize */
+                    "moveForward:",
+                    "moveForward:");
+    "~u"        = ( "uppercaseWord:",               /* M-u          Uppercase */
+                    "moveForward:",
+                    "moveForward:");
+    "~θ"        = ( "uppercaseWord:",               /* M-θ          Uppercase */
+                    "moveForward:",
+                    "moveForward:");
+    "~l"        = ( "lowercaseWord:",               /* M-l          Lowercase */
+                    "moveForward:",
+                    "moveForward:");
+    "~λ"        = ( "lowercaseWord:",               /* M-λ          Lowercase */
+                    "moveForward:",
+                    "moveForward:");
+    "~d"        = "deleteWordForward:";             /* M-d          Delete word forward */
+    "~δ"        = "deleteWordForward:";             /* M-δ          Delete word forward */
+    "^~h"       = "deleteWordBackward:";            /* M-C-h        Delete word backward */
+    "^~η"       = "deleteWordBackward:";            /* M-C-η        Delete word backward */
+    "~\U007F"   = "deleteWordBackward:";            /* M-Bksp       Delete word backward */
+    "~t"        = "transposeWords:";                /* M-t          Transpose words */
+    "~τ"        = "transposeWords:";                /* M-τ          Transpose words */
+    "~\@"       = ( "setMark:",                     /* M-@          Mark word */
+                    "moveWordForward:",
+                    "swapWithMark");
+    "~h"        = ( "setMark:",                     /* M-h          Mark paragraph */
+                    "moveToEndOfParagraph:",
+                    "swapWithMark");
+    "~η"        = ( "setMark:",                     /* M-η          Mark paragraph */
+                    "moveToEndOfParagraph:",
+                    "swapWithMark");		    
+
+    /* C-x shortcuts */
     "^x" = {
-        "^y"    = "scrollLineUp:";                  /* C-x C-y     scroll one line up */
-        "^e"    = "scrollLineDown:";                /* C-x C-e     scroll one line down */
-        "^b"    = "scrollPageUp:";                  /* C-x C-b     scroll one page up */
-        "^f"    = "scrollPageDown:";                /* C-x C-f     scroll one page down */
-        "^z"    = "centerSelectionInVisibleArea:";  /* C-x C-z     center the selection in the text area */
-        "^x"    = "swapWithMark:";                  /* C-x C-x     Swap with mark */
-        "^m"    = "selectToMark:";                  /* C-x C-m     Select to mark*/
+        "u"     = "undo:";                          /* C-x u        Undo */
+        "k"     = "performClose:";                  /* C-x k        Close */
+        "^f"    = "openDocument:";                  /* C-x C-f      Open (find file) */
+        "^x"    = "swapWithMark:";                  /* C-x C-x      Swap with mark */
+        "^m"    = "selectToMark:";                  /* C-x C-m      Select to mark*/
+        "^s"    = "saveDocument:";                  /* C-x C-s      Save */
+        "^w"    = "saveDocumentAs:";                /* C-x C-w      Save as */
     };
 
-    "^χ" = {
-        "^υ"    = "scrollLineUp:";                  /* C-χ C-υ     scroll one line up */   
-        "^ε"    = "scrollLineDown:";                /* C-χ C-ε     scroll one line down */
-        "^β"    = "scrollPageUp:";                  /* C-χ C-β     scroll one page up */
-        "^φ"    = "scrollPageDown:";                /* C-χ C-φ     scroll one page down */
-        "^ζ"    = "centerSelectionInVisibleArea:";  /* C-x C-ζ     center the selection in the text area */
-        "^χ"    = "swapWithMark:";                  /* C-χ C-χ     Swap with mark */
-        "^μ"    = "selectToMark:";                  /* C-χ C-μ     Select to mark*/
+   "^χ" = {
+        "θ"     = "undo:";                          /* C-χ θ        Undo */
+        "κ"     = "performClose:";                  /* C-χ κ        Close */
+        "^φ"    = "openDocument:";                  /* C-χ C-φ      Open (find file) */
+        "^χ"    = "swapWithMark:";                  /* C-χ C-χ      Swap with mark */
+        "^μ"    = "selectToMark:";                  /* C-χ C-μ      Select to mark*/
+        "^σ"    = "saveDocument:";                  /* C-χ C-σ      Save */
+        "^ς"    = "saveDocumentAs:";                /* C-χ C-ς      Save as */
     };
 
-    "^\@"       = "setMark:";                       /* C-@         Set mark */
-    "^c"        = "deleteToMark:";                  /* C-c         Delete to mark */
-    "^ψ"        = "deleteToMark:";                  /* C-ψ         Delete to mark */
-
-    
-    "^\UF729"   = "moveToBeginningOfDocument:";     /* C-Home      move to beginning of document */
-    "^\UF72B"   = "moveToEndOfDocument:";           /* C-End       move to end of document */
-
-  /* Shift shortcuts */
-    "$\UF729"   = "moveToBeginningOfLine:";         /* S-Home      move to the beginning of the line */
-    "$\UF72B"   = "moveToEndOfLine:";               /* S-End       move to the end of the line */
 }
-
